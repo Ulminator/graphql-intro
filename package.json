@@ -1,0 +1,30 @@
+{
+  "name": "graphql-intro",
+  "version": "1.0.0",
+  "description": "Simple introduction to GraphQL with multiple data sources.",
+  "main": "app.js",
+  "scripts": {
+    "setup": "./database/dockerMongo.sh && ./database/dockerPostgres.sh",
+    "dev": "nodemon lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ulminator/graphql-intro.git"
+  },
+  "author": "Matt Ulmer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "humps": "^2.0.1",
+    "mongodb": "^2.1.18",
+    "pg": "^7.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "nodemon": "^1.17.5"
+  }
+}
